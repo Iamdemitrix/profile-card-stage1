@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <article data-testid="test-profile-card" class="profile-card">
+    <figure class="avatar-section">
+      <a href="https://imgur.com/a/VFuQCgs"></a><img src="img/daniel.jpg" alt="Daniel Adesanya" data-testid="test-user-avatar" class="avatar"></a>
+    </figure>
+
+    <div class="profile-content">
+      <header>
+        <h2 data-testid="test-user-name">Daniel Adesanya</h2>
+      </header>
+
+      <p data-testid="test-user-bio">
+        Computer science student passionate about cybersecurity, web development, and system design.
+      </p>
+
+      <p>
+        Current Time (ms): 
+        <span data-testid="test-user-time" id="user-time"></span>
+      </p>
+
+      <nav data-testid="test-user-social-links" class="social-links">
+        <ul>
+          <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter">Twitter</a></li>
+          <li><a href="https://github.com" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">GitHub</a></li>
+          <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">LinkedIn</a></li>
+        </ul>
+      </nav>
+
+      <section data-testid="test-user-hobbies">
+        <h3>Hobbies</h3>
+        <ul>
+          <li>Learning new technologies</li>
+          <li>Workout</li>
+          <li>Music</li>
+        </ul>
+      </section>
+
+      <section data-testid="test-user-dislikes">
+        <h3>Dislikes</h3>
+        <ul>
+          <li>Procrastination</li>
+          <li>Disorganization</li>
+          <li>Dishonesty</li>
+        </ul>
+      </section>
+    </div>
+    <footer>
+      <nav data-testid="test-user-navigation" class="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li></li><a href="about.html">About</a></li>
+        </ul>
+     </nav>
+    </footer>
+  </article>
+
+  <script src="Js/script.js"></script>
+</body>
+</html>

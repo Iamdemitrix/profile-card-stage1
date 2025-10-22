@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+  <main>
+    <section class="contact-container">
+      <h1>Contact Us</h1>
+      <form id="contact-form" data-testid="test-contact-form" novalidate>
+        <label for="name">Full Name</label>
+        <input id="name" type="text" data-testid="test-contact-name" aria-describedby="error-name">
+        <p id="error-name" class="error" data-testid="test-contact-error-name"></p>
+
+        <label for="email">Email</label>
+        <input id="email" type="email" data-testid="test-contact-email" aria-describedby="error-email">
+        <p id="error-email" class="error" data-testid="test-contact-error-email"></p>
+
+        <label for="subject">Subject</label>
+        <input id="subject" type="text" data-testid="test-contact-subject" aria-describedby="error-subject">
+        <p id="error-subject" class="error" data-testid="test-contact-error-subject"></p>
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" data-testid="test-contact-message" aria-describedby="error-message"></textarea>
+        <p id="error-message" class="error" data-testid="test-contact-error-message"></p>
+
+        <button type="submit" data-testid="test-contact-submit">Send</button>
+        <p id="success" class="success" data-testid="test-contact-success"></p>
+      </form>
+
+      <nav data-testid="test-user-navigation" class="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </section>
+  </main>
+
+  <script src="/Js/script.js"></script>
+</body>
+</html>
